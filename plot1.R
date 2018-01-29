@@ -1,6 +1,5 @@
 ## This first line will likely take a few seconds. Be patient!
 NEI <- readRDS("summarySCC_PM25.rds")
-SCC <- readRDS("Source_Classification_Code.rds")
 
 # aggregate value emission per year and sum it
 EmiTotperYear<-aggregate(Emissions~year,NEI,sum)
